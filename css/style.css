@@ -1,0 +1,177 @@
+@import url(http://fonts.googleapis.com/css?family=Domine:400,700);
+
+div.main-wrap {
+	overflow: hidden;
+}
+
+/* The slide-down panel at the very top of the page. Like literally. It's above the page, hidden. */
+.slidey {
+	overflow: hidden;
+	padding: 30px 0;
+
+	background: #f3f5f8;
+	border-bottom: 1px solid #e5e8ed;
+}
+	.js-enabled .slidey {
+		-webkit-transition: margin-top .2s;
+		-moz-transition: margin-top .2s;
+		transition: margin-top .2s;
+	}
+	.slidey b, .slidey label {
+		display: block;
+		font-weight: 500;
+		padding-bottom: 15px;
+
+		font-size: 15px;
+		font-weight: 500;
+	}
+	.slidey form, .slidey aside {
+		float: left;
+		width: 50%;
+	}
+		.slidey form input {
+			padding: 20px;
+			width: 75%;
+		}
+	.slidey li {
+		list-style: none;
+	}
+		.slidey a {
+			display: block;
+			text-decoration: none;
+
+			color: #717985;
+		}
+			.slidey a:hover {
+				color: #414b59;
+			}
+		.slidey li span {
+			float: right;
+			opacity: .6;
+		}
+
+header{
+	height: 500px;
+	width: 100%;
+	background: #1cc3a7;
+	overflow: hidden;
+}
+
+ul.a, ul.b{
+	list-style-type: none;
+	float: right;
+	padding-right: 40px;
+	padding-top: 10px;
+}
+
+ul.a{
+	float: left;
+	padding-left: 40px;
+
+	/*position: relative;
+	left: 50%;*/
+}
+
+li.active{
+	background-color: #000;
+	font-family: Helvetica;
+}
+
+li.tray, li.active{
+	display: inline-block;
+	padding: 0 15px 0 15px;
+	margin-left: 10px;
+	
+	/*border: 1px solid black;*/
+	border-radius: 3px;
+	height: 30px;	
+	padding-top: 4px;
+}
+
+.active a{
+	color:#fff;
+}
+
+.tray a{
+	color:#000;
+}
+.active a, .tray a{
+	text-decoration:none;
+	font-family: helvetica;
+	font-weight: bold;
+} 
+
+.active a:hover, .tray a:hover {
+	text-decoration: none;
+	/*color:#fff;*/
+	opacity: .7;
+}
+
+.linky img{
+	height: 16px;
+	width: 16px;
+}
+
+.pagetitle {
+	margin-top: 100px;
+}
+
+.pagetitle h1{
+	color:#000;
+	font-size: 120pt;
+	font-weight: bold;
+	font-family: 'Domine', serif;
+	text-align: center;
+}
+
+
+/*@media screen and (min-width : 645px) { 
+	.pagetitle h1 {
+		font-size: 72pt;
+	}	
+}*/
+
+.title{
+	font-size: 40px;
+	padding: 15px 20px 0 20px;
+}
+
+.imgspace img{
+	height: auto; 
+	width:100%;
+	padding-top:40px;
+}
+
+
+div.content {
+	padding: 0 20px 0 20px;
+	font-family: 'Domine', serif;
+	font-size: 12pt;
+	line-height: 26px;
+	margin-bottom: 15px;
+}
+
+.content a, .title a{
+	text-decoration:none;
+	color: #000;
+} 
+
+.content a:hover, .title a:hover {
+	text-decoration: none;
+	color: #000;
+}
+
+.content a:visited, .title a:visited {
+	color:#000;
+}
+
+footer{
+	padding: 0 20px 20px 20px;
+	margin-bottom: 0px;
+	color: #B8B8B8;
+	font-size: 12px;	
+}
+
+
+
+
