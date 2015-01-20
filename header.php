@@ -45,25 +45,14 @@
 	<body class="<?php echo body_class(); ?>">
 		<div class="main-wrap">
 			<div class="slidey" id="tray">
-				<div class="wrap">
-					<form id="search" action="<?php echo search_url(); ?>" method="post">
-						<label for="term">Search my blog:</label>
-						<input type="search" id="term" name="term" placeholder="To search, type and hit enter&hellip;" value="<?php echo search_term(); ?>">
-					</form>
-
-					<aside>
-						<b>Categories</b>
-						<ul>
-						<?php while(categories()): ?>
-							<li>
-								<a href="<?php echo category_url(); ?>" title="<?php echo category_description(); ?>">
-									<?php echo category_title(); ?> <span><?php echo category_count(); ?></span>
-								</a>
-							</li>
-						<?php endwhile; ?>
-						</ul>
-					</aside>
+				<div class="col-md-12">
+					<div class="container wrap">
+						<form id="search" action="<?php echo search_url(); ?>" method="post">
+							<input type="search" id="term" class="search" name="term" placeholder="Search" value="<?php echo search_term(); ?>" autocomplete="off">
+						</form>
+					</div>		
 				</div>
+
 			</div>
 
 			<header>

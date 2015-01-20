@@ -170,6 +170,25 @@ footer{
 	font-size: 12px;	
 }
 
+.search{
+	border: none;
+	background-color: #f3f5f8;
+	font-size: 50px;
+	
+}
 
-
-
+.search:focus{
+	outline: none;
+}
+/*.search::-webkit-input-placeholder {
+    color: red;
+}
+.search:-moz-placeholder {
+    color: red;
+}
+.search::-moz-placeholder {
+    color: red;
+}
+.search:-ms-input-placeholder {
+    color: red;
+}*/
