@@ -40,4 +40,6 @@
 		<?php endif; ?>
 	</section>
 
-<?php theme_include('footer'); ?>
+	<?php theme_include('footer'); ?>
+	</div>
+</div>

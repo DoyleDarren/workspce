@@ -1,5 +1,32 @@
 <?php theme_include('header'); ?>
 
+<link rel="stylesheet" href="<?php echo theme_url('/css/article.css'); ?>">
+
+<div class="imgspace">
+	<nav>
+		<ul class="a">
+			<?php while(menu_items()): ?>
+				<li <?php echo (menu_active() ? 'class="active"' : 'class="tray"'); ?>>
+					<a href="<?php echo menu_url(); ?>" title="<?php echo menu_title(); ?>">
+						<?php echo menu_name(); ?>
+					</a>
+				</li>
+			<?php endwhile; ?>
+		</ul>
+		<ul class="b">
+			<li>
+				<a href="#tray" class="linky"><img src="<?php echo theme_url('img/categories.png'); ?>" alt="Categories" title="View my posts by category"></a>
+			</li>
+		</ul>	
+	</nav>
+	
+	<?php if(article_custom_field('image','')!=""): ?>
+	<a href="<?php echo article_url(); ?>"><img src="<?php echo article_custom_field('image', ''); ?>"/></a>
+	<?php endif; ?>
+</div>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
 		<section class="content wrap" id="article-<?php echo article_id(); ?>">
 			<h1 class="title"><?php echo article_title(); ?></h1>
 
@@ -60,4 +87,6 @@
 		</section>
 		<?php endif; ?>
 
-<?php theme_include('footer'); ?>
+		<?php theme_include('footer'); ?>
+	</div>
+</div>

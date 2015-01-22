@@ -46,23 +46,11 @@
 		<div class="main-wrap">
 			<div class="slidey" id="tray">
 				<div class="wrap">
-					<form id="search" action="<?php echo search_url(); ?>" method="post">
-						<label for="term">Search my blog:</label>
-						<input type="search" id="term" name="term" placeholder="To search, type and hit enter&hellip;" value="<?php echo search_term(); ?>">
-					</form>
-
-					<aside>
-						<b>Categories</b>
-						<ul>
-						<?php while(categories()): ?>
-							<li>
-								<a href="<?php echo category_url(); ?>" title="<?php echo category_description(); ?>">
-									<?php echo category_title(); ?> <span><?php echo category_count(); ?></span>
-								</a>
-							</li>
-						<?php endwhile; ?>
-						</ul>
-					</aside>
+					<div class="col-md-12">
+						<form id="search" action="<?php echo search_url(); ?>" method="post">
+							<input type="search" class="input-search" id="term" name="term" placeholder="Search" value="<?php echo search_term(); ?>" autocomplete="off">
+						</form>						
+					</div>
 				</div>
 			</div>
 
@@ -70,30 +58,17 @@
 				<?php if(has_menu_items()): ?>
 				<nav>
 					<ul class="a">
-					<?php while(menu_items()): ?>
-						<li <?php echo (menu_active() ? 'class="active"' : ''); ?>>
-							<a href="<?php echo menu_url(); ?>" title="<?php echo menu_title(); ?>">
-								<?php echo menu_name(); ?>
-							</a>
-						</li>
+						<?php while(menu_items()): ?>
+							<li <?php echo (menu_active() ? 'class="active"' : 'class="tray"'); ?>>
+								<a href="<?php echo menu_url(); ?>" title="<?php echo menu_title(); ?>">
+									<?php echo menu_name(); ?>
+								</a>
+							</li>
 						<?php endwhile; ?>
-						<li class="tray">
-							<a href="/html/">Menu Item1</a>
-						</li>
-						<li class="tray">	
-							<a href="/css/">Menu Item2</a>
-						</li>
-						<!-- if you want to add more nav items-->
-						<li class="tray">
-							<a href="/js/">Menu3</a> 
-						</li>
-						<li class="tray">
-							<a href="/jquery/">A Menu Item</a>
-						</li>
 					</ul>
 					<ul class="b">
 						<li>
-							<a href="#tray" class="linky"><img src="<?php echo theme_url('img/categories.png'); ?>" alt="Categories" title="View my posts by category"></a>
+							<a href="#tray" class="linky"><img src="<?php echo theme_url('img/categories.png'); ?>" alt="Categories" title="Search my posts"></a>
 						</li>
 					</ul>	
 
