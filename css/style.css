@@ -174,7 +174,6 @@ footer{
 	font-style: italic;	
 }
 
-<<<<<<< HEAD
 .input-search{
 	border: none;
 	background-color: #f3f5f8;
@@ -182,32 +181,21 @@ footer{
 }
 
 .input-search:focus{
-=======
-.search{
 	border: none;
 	background-color: #f3f5f8;
 	font-size: 50px;
 	
 }
-
-.search:focus{
->>>>>>> d34979828f54fc93e3fef7983a46bffdf2d854cb
-	outline: none;
-}
-/*.search::-webkit-input-placeholder {
+/*.input-search::-webkit-input-placeholder {
     color: red;
 }
-.search:-moz-placeholder {
+.input-search:-moz-placeholder {
     color: red;
 }
-.search::-moz-placeholder {
+.input-search::-moz-placeholder {
     color: red;
 }
-.search:-ms-input-placeholder {
+.input-search:-ms-input-placeholder {
     color: red;
-<<<<<<< HEAD
 }*/
 
-=======
-}*/
->>>>>>> d34979828f54fc93e3fef7983a46bffdf2d854cb
