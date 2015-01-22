@@ -186,3 +186,19 @@ footer{
 	font-size: 50px;
 	outline: none;
 }
+/*search page*/
+.search-list{
+	list-style: none;
+	padding: 10px 0px 30px;
+}
+
+
+ul.items {
+	padding-left: 0px;
+}
+
+h1.wrap{
+	padding-top:40px;
+}
+
+
