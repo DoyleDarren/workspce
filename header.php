@@ -33,6 +33,7 @@
 	    <meta property="og:image" content="<?php echo theme_url('img/og_image.gif'); ?>">
 	    <meta property="og:site_name" content="<?php echo site_name(); ?>">
 	    <meta property="og:description" content="<?php echo site_description(); ?>">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<?php if(customised()): ?>
 		    <!-- Custom CSS -->
@@ -75,7 +76,7 @@
 
 				</nav>
 					<div class="pagetitle col-md-12">
-						<h1><?php echo site_name(); ?></h1>
+						<h1 class="page-title"><?php echo site_name(); ?></h1>
 					</div>				
 				<?php endif; ?>
 			</header>
