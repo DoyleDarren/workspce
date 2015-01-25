@@ -58,14 +58,13 @@ header{
 }
 
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen {
-and (min-width: 320px) 
-and (max-width: 480px) 
-	.page-title {
+@media screen and (min-width: 320px) and (max-width: 480px) {
+	.pagetitle { 
 		font-size: 42pt;
 		color:red;
 	}
 }
+
 
 
 /* iPads (portrait and landscape) ----------- */
