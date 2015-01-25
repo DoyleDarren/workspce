@@ -57,30 +57,6 @@ header{
 	overflow: hidden;
 }
 
-/* Smartphones (portrait and landscape) ----------- */
-@media screen and (min-width: 320px) and (max-width: 480px) {
-	.pagetitle { 
-		font-size: 42pt;
-		color:red;
-	}
-}
-
-
-
-/* iPads (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) {
-	/* Styles */
-}		 
-
-/* Desktops and laptops ----------- */
-@media only screen 
-and (min-width : 1224px) {
-	/* Styles */
-}
-
-
 ul.a, ul.b{
 	list-style-type: none;
 	float: right;
@@ -225,4 +201,9 @@ h1.wrap{
 	padding-top:40px;
 }
 
-
+@media (min-width: 600px) and (max-width: 800px) {
+	.pagetitle h1 { 
+		font-size: 42px;
+		color: red;
+	}
+}
