@@ -73,10 +73,7 @@
 							<a href="#tray" class="linky"><img src="<?php echo theme_url('img/categories.png'); ?>" alt="Categories" title="Search my posts"></a>
 						</li>
 					</ul>	
-
 				</nav>
-					<div class="pagetitle col-md-12">
-						<h1><?php echo site_name(); ?></h1>
-					</div>				
+					<h1 class="page-title"><?php echo site_name(); ?></h1>		
 				<?php endif; ?>
 			</header>
