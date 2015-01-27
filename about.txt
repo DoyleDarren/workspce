@@ -1,5 +1,5 @@
 Theme name:    Default
-Description:   This is the default, shiny theme for Anchor CMS.
-Author name:   Visual Idiot
-Author site:   http://visualidiot.com
+Description:   This is my default created theme.
+Author name:   Darren Doyle
+Author site:   http://worksp_ce.com
 License:       http://licence.visualidiot.com

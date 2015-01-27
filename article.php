@@ -30,7 +30,7 @@
 		<section class="content wrap" id="article-<?php echo article_id(); ?>">
 			<h1 class="title"><?php echo article_title(); ?></h1>
 
-			<article>
+			<article class="content">
 				<?php echo article_markdown(); ?>
 			</article>
 

@@ -53,7 +53,7 @@ div.main-wrap {
 header{
 	height: 500px;
 	width: 100%;
-	background: #1cc3a7;
+	background-color: #1cc3a7;
 	overflow: hidden; 
 	-webkit-transform-style: preserve-3d;
   	-moz-transform-style: preserve-3d;
@@ -73,20 +73,17 @@ header{
 
 ul.a, ul.b{
 	list-style-type: none;
-	
+	float: right;
+	padding-right: 40px;
+	padding-top: 10px;
 }
 
-ul.a {
-	padding: 0px 0px 0px 0px;
-	position: absolute;
+ul.a{
+	float: left;
+	padding-left: 10px;
+
+	position: relative;
 	left:2%;
-	top:10px;
-}
-
-ul.b{
-	position: absolute;
-	left:98%;
-	top:10px;
 }
 
 li.active{
@@ -131,30 +128,6 @@ li.tray, li.active{
 	margin-top: 10px;
 }
 
-.pagetitle{
- -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-}
-
-.pagetitle h1{
-	color:#000;
-	font-size: 120pt;
-	font-weight: bold;
-	font-family: 'Domine', serif;
-	text-align: center;
-	position: relative;
-  	top: 50%;
-	transform: translateY(-50%);
-	/*right: 50%;*/
-  	/*margin-left: -945px;*/  	
-}
-
-/*@media screen and (min-width : 645px) { 
-	.pagetitle h1 {
-		font-size: 72pt;
-	}	
-}*/
 
 .title{
 	font-size: 40px;
@@ -226,14 +199,15 @@ h1.wrap{
 	padding-top:40px;
 }
 
-@media (min-width: 320px) and (max-width: 420px) {
-	.pagetitle h1, .input-search input  { 
-		font-size: 46px;
+@media (min-width: 220px) and (max-width: 540px) {
+	h1.page-title  { 
+		font-size: 54px;
 	}
 }
 
-@media (min-width: 320px) and (max-width: 420px) {
-	.pagetitle h1  { 
-		font-size: 46px;
+@media (min-width: 540px) and (max-width: 820px) {
+	h1.page-title  { 
+		font-size: 90px;
 	}
 }
+
