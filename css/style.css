@@ -59,17 +59,20 @@ header{
 
 ul.a, ul.b{
 	list-style-type: none;
-	float: right;
-	padding-right: 40px;
-	padding-top: 10px;
+	
 }
 
-ul.a{
-	float: left;
-	padding-left: 40px;
+ul.a {
+	padding: 0px 0px 0px 0px;
+	position: absolute;
+	left:2%;
+	top:10px;
+}
 
-	/*position: relative;
-	left: 50%;*/
+ul.b{
+	position: absolute;
+	left:98%;
+	top:10px;
 }
 
 li.active{
