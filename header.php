@@ -76,7 +76,7 @@
 
 				</nav>
 					<div class="pagetitle col-md-12">
-						<h1 class="page-title"><?php echo site_name(); ?></h1>
+						<h1><?php echo site_name(); ?></h1>
 					</div>				
 				<?php endif; ?>
 			</header>

@@ -27,11 +27,11 @@ div.main-wrap {
 	}
 	.slidey form, .slidey aside {
 		float: left;
-		width: 50%;
+		width: 100%;
 	}
 		.slidey form input {
-			padding: 20px;
-			width: 75%;
+			padding: 10px;
+			width: 100%;
 		}
 	.slidey li {
 		list-style: none;
@@ -54,7 +54,7 @@ header{
 	height: 500px;
 	width: 100%;
 	background: #1cc3a7;
-	overflow: hidden;
+	overflow: hidden; 
 }
 
 ul.a, ul.b{
@@ -114,8 +114,10 @@ li.tray, li.active{
 	margin-top: 10px;
 }
 
-.pagetitle {
-	margin-top: 100px;
+.pagetitle{
+ -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
 
 .pagetitle h1{
@@ -124,6 +126,11 @@ li.tray, li.active{
 	font-weight: bold;
 	font-family: 'Domine', serif;
 	text-align: center;
+	position: relative;
+  	top: 50%;
+	transform: translateY(-50%);
+	/*right: 50%;*/
+  	/*margin-left: -945px;*/  	
 }
 
 /*@media screen and (min-width : 645px) { 
@@ -178,6 +185,7 @@ footer{
 	border: none;
 	background-color: #f3f5f8;
 	font-size: 50px;
+	width: 100%;
 }
 
 .input-search:focus{
@@ -201,9 +209,14 @@ h1.wrap{
 	padding-top:40px;
 }
 
-@media (min-width: 600px) and (max-width: 800px) {
-	.pagetitle h1 { 
-		font-size: 42px;
-		color: red;
+@media (min-width: 320px) and (max-width: 420px) {
+	.pagetitle h1, .input-search input  { 
+		font-size: 46px;
+	}
+}
+
+@media (min-width: 320px) and (max-width: 420px) {
+	.pagetitle h1  { 
+		font-size: 46px;
 	}
 }
