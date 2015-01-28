@@ -10,23 +10,22 @@ header{
 	padding-top: 0px;
 }
 
-
 ul.a{
 	position: absolute;
 	margin: 0px;
-	float: left;	
+	float: left;
 }
 
 ul.b{
 	padding: 0px 0px 0px 0px;
 	position: absolute;
-	left:98%;
+	left: 98%;
 }
 
-.linky {
+.linky{
 	position: absolute;
-	top:10px;
-	right:12px;
+	top: 10px;
+	right: 12px;
 }
 
 .linky img{
@@ -35,13 +34,14 @@ ul.b{
 	padding-top: 0px;
 }
 
-/*content section*/
+/*Content Section*/
+
 .title{
 	font-size: 40px;
 	padding: 15px 20px 0 0;
 }
 
-section {
+section{
 	padding: 0 20px 0 20px;
 	font-family: 'Domine', serif;
 	font-size: 12pt;
@@ -52,134 +52,132 @@ section {
 section.footnote{
 	padding: 5px 0px 40px 0px;
 	margin-bottom: 0px;
-	display:block;
+	display: block;
 	margin-top: 5px;
 	color: #98a2b1;
 	font-size: 14px;
-	font-style: italic;	
-}	
-
+	font-style: italic;
+}
 
 .content blockquote {
-  /*background: #f9f9f9;*/
-  border-left: 10px solid #0eeac2;
-  margin: 1.5em 10px;
-  padding: 0.5em 10px;
-  quotes: "\201C""\201D""\2018""\2019";
+	border-left: 10px solid #0eeac2;
+	margin: 1.5em 10px;
+	padding: 0.5em 10px;
 }
 
-.content blockquote:before {
-  color: #0eeac2;
-  content: open-quote;
-  font-size: 4em;
-  line-height: 0.1em;
-  margin-right: 0.25em;
-  vertical-align: -0.4em;
+.content blockquote:before{
+	color: #0eeac2;
+	content: '“';
+	font-size: 4em;
+	line-height: 0.1em;
+	margin-right: 0.25em;
+	vertical-align: -0.4em;
 }
 
-.conten blockquote p {
+.conten blockquote p{
   display: inline;
 }
 
-/*comment section*/
-.commentlist time, .items footer {
+/*Comment Section*/
+
+.commentlist time, .items footer{
 	display: block;
 	padding: 5px 0 15px;
-
 	color: #98a2b1;
 	font-size: 14px;
 	font-style: italic;
-	
 	white-space: nowrap;
 }
 
-/**
- *   Comment form
- */
-ul.commentlist {
-	margin-bottom: 40px;
+/*Comment Form */
 
+ul.commentlist{
+	margin-bottom: 40px;
 	list-style: none;
 	border-top: 1px solid rgba(22,36,54,.1);
 }
-	ul.commentlist .wrap {
+	ul.commentlist .wrap{
 		position: relative;
 	}
-	ul.commentlist li {
+
+	ul.commentlist li{
 		padding: 40px 0;
 		border-bottom: 1px solid rgba(22,36,54,.1);
 	}
-		ul.commentlist time {
+
+		ul.commentlist time{
 			font-size: 13px;
 		}
-		ul.commentlist h2 {
+		
+		ul.commentlist h2{
 			font-size: 25px;
 			line-height: 33px;
 		}
-		ul.commentlist .counter {
+
+		ul.commentlist .counter{
 			position: absolute;
 			right: 0;
 			top: 0;
-
 			font-size: 25px;
 			font-weight: 300;
 			color: #cdd2da;
 		}
 
-#comment {
+#comment{
 	overflow: hidden;
 }
-	#comment label[for] {
+
+	#comment label[for]{
 		display: none;
 	}
-	#comment p {
+
+	#comment p{
 		float: left;
 		width: 48%;
 		margin-right: 4%;
 		margin-bottom: 10px;
-
 		text-indent: 0;
 	}
-		#comment p + p {
+		#comment p + p{
 			margin-right: 0;
 		}
-		#comment p.textarea {
+
+		#comment p.textarea{
 			float: none;
 			width: 100%;
 		}
-	#comment input, #comment textarea {
+
+	#comment input, #comment textarea{
 		width: 100%;
 		padding: 10px 15px;
-
 		font-size: 15px;
 		font-weight: normal;
-
 		border: 1px solid rgba(22,36,54,.2);
 		border-radius: 4px;
 	}
-		#comment input:focus, #comment textarea:focus {
+		#comment input:focus, #comment textarea:focus{
 			outline: none;
 			background: #f7f9fc;
 		}
-		#comment textarea {
+
+		#comment textarea{
 			min-height: 150px;
 			max-height: 800px;
 			resize: vertical;
 		}
-	#comment button {
+
+	#comment button{
 		display: inline-block;
 		padding: 9px 18px;
-
 		background: #4e82ce;
 		color: #fff;
-
 		border: none;
 		border-radius: 5px;
 		cursor: pointer;
-
 		font-size: 13px;
 		font-weight: 500;
 	}
+	
 		#comment button:hover {
 			background: #3c6eb7;
 		}
