@@ -68,9 +68,11 @@
 							</li>
 						<?php endwhile; ?>
 					</ul>
+
 					<ul class="b">
 						<li>
-							<a href="#tray" class="linky"><img src="<?php echo theme_url('img/categories.png'); ?>" alt="Categories" title="Search my posts"></a>
+							<!-- <a href="#tray" class="linky"><img src="<?php echo theme_url('img/categories.png'); ?>" alt="Categories" title="Search my posts"></a> -->
+							<a title="Search my posts"class="absolute cross"><div></div></a>
 						</li>
 					</ul>	
 				</nav>
