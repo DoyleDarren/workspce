@@ -147,8 +147,8 @@ li.tray, li.active{
 	left: 0;
 	right: 0;
 	width: 30px;
-	height: 3px;
-		
+	height: 4px;
+
 	background-color: #000;
 	
 	transition: .25s all ease-out;
