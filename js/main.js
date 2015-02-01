@@ -11,7 +11,7 @@ var Anchor = {
 		$(window).on('keydown', Anchor.keydown);
 
 		//  Set up the toggle link
-		Anchor.cross = $('.cross').on('click', Anchor.toggleSlidey);
+		Anchor.linky = $('.linky').on('click', Anchor.toggleSlidey);
 
 		//  Hide the thingymabob
 		setTimeout(function() {
@@ -23,8 +23,8 @@ var Anchor = {
 
 		//  Listen for search link
 		$('a[href="#search"]').click(function() {
-			if(!Anchor.cross.hasClass('active')) {
-				return Anchor.toggleSlidey.call(Anchor.cross);
+			if(!Anchor.linky.hasClass('active')) {
+				return Anchor.toggleSlidey.call(Anchor.linky);
 			}
 		});
 	},
@@ -40,7 +40,7 @@ var Anchor = {
 		if(Anchor.keys[17] && Anchor.keys[16] && Anchor.keys[70]) {
 			event.preventDefault();
 
-			Anchor.showSlidey.call(Anchor.cross);
+			Anchor.showSlidey.call(Anchor.linky);
 			$('input[type="search"]').focus();
 		}
 
@@ -55,14 +55,14 @@ var Anchor = {
 
 	hideSlidey: function() {
 		Anchor.slidey.css('margin-top', this._slideyHeight);
-		Anchor.cross && Anchor.cross.removeClass('active');
+		Anchor.linky && Anchor.linky.removeClass('active');
 
 		return this;
 	},
 
 	showSlidey: function() {
 		Anchor.slidey.css('margin-top', 0);
-		Anchor.cross && Anchor.cross.addClass('active');
+		Anchor.linky && Anchor.linky.addClass('active');
 
 		return this;
 	},

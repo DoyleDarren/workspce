@@ -54,8 +54,7 @@ header{
 	height: 500px;
 	width: 100%;
 	background-color: #1cc3a7;
-	overflow: hidden;
-	position: relative;
+	overflow: hidden; 
 	-webkit-transform-style: preserve-3d;
   	-moz-transform-style: preserve-3d;
   	transform-style: preserve-3d;
@@ -94,13 +93,14 @@ li.active{
 
 li.tray, li.active{
 	display: inline-block;
-	padding: 8px 15px;
+	padding: 4px 15px 0 15px;
 	margin-left: 10px;
-	margin-top: 12px;
-	/* border: 1px solid black; */
+	margin-top: 10px;
+	
+	/*border: 1px solid black;*/
 	border-radius: 3px;
-	/* height: 30px; */
-	/* padding-top: 4px; */
+	height: 30px;	
+	/*padding-top: 4px;*/
 }
 
 .active a{
@@ -118,63 +118,16 @@ li.tray, li.active{
 
 .active a:hover, .tray a:hover {
 	text-decoration: none;
-	color: #aaa;
+	opacity: .7;
 }
 
-.absolute{
-	position: absolute;
-	top: 20px;
-	right: 30px;
-}
-.cross{
-	cursor: pointer;
-	width:  30px;
-	height:  22px;
-	
-	transition: .5s all ease-out;
-	-webkit-transition: .5s all ease-out;
-	-moz-transition: .5s all ease-out;
-	-o-transition: .5s all ease-out;
-}
-.cross.transform{
-	transform: rotate(-360deg);
-	-webkit-transform: rotate(-360deg);
-	-moz-transform: rotate(-360deg);
-	-o-transform: rotate(-360deg);
-}
-.cross div, .cross div:before, .cross div:after{
-	position: absolute;
-	left: 0;
-	right: 0;
-	width: 30px;
-	height: 4px;
 
-	background-color: #000;
-	
-	transition: .25s all ease-out;
-	-webkit-transition: .25s all ease-out;
-	-moz-transition: .25s all ease-out;
-	-o-transition: .25s all ease-out;
+.linky img{
+	height: 16px;
+	width: 16px;
+	margin-top: 10px;
 }
-.cross div:before, .cross div:after{ content:''; }
-.cross div:before{ top: -10px;}
-.cross div{ top: 50%; margin-top: -2.5px; }
-.cross div:after{ bottom: -10px; }
 
-.cross.transform div:before, .cross.transform div:after{
-	width: 35px;
-}
-.cross.transform div{
-	transform: rotate(-45deg);
-}
-.cross.transform div:before{
-	top: 0;
-	transform: rotate(0);
-}
-.cross.transform div:after{
-	bottom: 0;
-	transform: rotate(90deg);
-}
 
 .title{
 	font-size: 40px;
