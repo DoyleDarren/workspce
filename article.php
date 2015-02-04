@@ -1,7 +1,7 @@
 <?php theme_include('header'); ?>
 
 <link rel="stylesheet" href="<?php echo theme_url('/css/article.css'); ?>">
-<h1>This is a test</h1>
+
 <div class="imgspace">
 	<nav>
 		<ul class="a">
