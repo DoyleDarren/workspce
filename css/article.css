@@ -59,6 +59,9 @@ section.footnote{
 	font-style: italic;
 }
 
+.content p{
+	line-height: 200%;
+}
 .content blockquote {
 	border-left: 10px solid #0eeac2;
 	margin: 1.5em 10px;
