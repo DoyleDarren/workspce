@@ -64,6 +64,23 @@ section.footnote{
 	font-size: 18px;
 }
 
+
+.content a:link {
+    color: #0eeac2;
+    text-decoration: underline;
+}
+
+.content a:visited {
+    color: #000000;
+     text-decoration: underline;
+}
+
+.content a:hover {
+    color: #128973;
+    text-decoration: underline;
+}
+
+
 .content blockquote {
 	border-left: 10px solid #0eeac2;
 	margin: 1.5em 10px;
