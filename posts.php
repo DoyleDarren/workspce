@@ -25,7 +25,7 @@
 						</footer>
 					</article>
 			<?php endwhile; ?>
-
+			
 			<?php if(has_pagination()): ?>
 			<nav class="pagination">
 				<div class="wrap">

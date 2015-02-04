@@ -53,7 +53,9 @@ div.main-wrap {
 header{
 	height: 500px;
 	width: 100%;
-	background-color: #1cc3a7;
+	background: url("../img/bg.png");
+	background-size: cover;
+
 	overflow: hidden;
 	position: relative;
 	-webkit-transform-style: preserve-3d;
