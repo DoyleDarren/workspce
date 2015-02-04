@@ -59,9 +59,11 @@ section.footnote{
 	font-style: italic;
 }
 
-.content p{
+.content{
 	line-height: 200%;
+	font-size: 18px;
 }
+
 .content blockquote {
 	border-left: 10px solid #0eeac2;
 	margin: 1.5em 10px;
@@ -77,7 +79,7 @@ section.footnote{
 	vertical-align: -0.4em;
 }
 
-.conten blockquote p{
+.content blockquote p{
   display: inline;
 }
 
