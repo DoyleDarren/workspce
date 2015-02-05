@@ -9,4 +9,4 @@
 []Fix links - green/underline  
 []Add favicon  
 []Add grey background  
-[]Social links - twitter, medium, email  
+[X]Social links - twitter, facebook, email  
