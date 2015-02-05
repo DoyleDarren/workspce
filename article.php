@@ -15,7 +15,7 @@
 		</ul>
 		<ul class="b">
 			<li>
-				<a href="#tray" class="linky"><img src="<?php echo theme_url('img/categories.png'); ?>" alt="Categories" title="View my posts by category"></a>
+				<a title="Search my posts"class="absolute cross"><div></div></a>
 			</li>
 		</ul>	
 	</nav>
