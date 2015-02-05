@@ -7,6 +7,7 @@
 		<meta name="description" content="<?php echo site_description(); ?>">
 		
 		<link rel="stylesheet" href="<?php echo theme_url('/css/style.css'); ?>">
+		<link rel="stylesheet" href="<?php echo theme_url('/css/fontello.css'); ?>">
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 		<!-- Optional theme -->

@@ -115,6 +115,40 @@ section.footnote{
 	white-space: nowrap;
 }
 
+.content a:visited {
+/* color: #000000; */
+/* text-decoration: underline; */
+}
+
+.share{
+	float: right;
+}
+.share a:link{
+	color: #CCC;
+	text-decoration: none;
+}
+.share a:hover{
+	color: #AAA;
+	text-decoration: none;
+}
+.share a:visited{
+	color: #9ee18f;
+	text-decoration: none;
+}
+.share ul li {
+	list-style: none;
+	float: left;
+}
+
+.share li a{
+	font-size: 20px;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
 /*Comment Form */
 
 ul.commentlist{

@@ -33,7 +33,21 @@
 			<article class="content">
 				<?php echo article_markdown(); ?>
 			</article>
+			<div class="share">
+			   <ul>
+			      <li>
+			        <a class="icon-twitter" href="http://twitter.com/share?url=<?php echo (full_url() . substr( article_url(), 1)); ?>&text=<?php echo article_title().": ".article_description();?>&via=<?php echo twitter_account(); ?>&hashtags=<?php echo article_custom_field('hashtags', '') ?>"
+			            onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+			        </a>
+			      </li>
 
+			    <li>
+			        <a class="icon-facebook-2" href="https://www.facebook.com/sharer/sharer.php?u=<?php echo (full_url() . substr( article_url(), 1)); ?>?>"
+			            onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+			        </a>
+			    <li><a class="icon-mail-alt" href="mailto:?cc=yell@denzildoyle.me&amp;subject=Have a look at this blog post&amp;body=<?php echo " ". article_title()." : ".article_description();?><?php echo " via ". twitter_account(); ?><?php echo " ". (full_url() . substr( article_url(), 1));?>"></a></li>
+			  </ul>
+			</div>
 			<section class="footnote">
 				<!-- Unfortunately, CSS means everything's got to be inline. -->
 				<p>This article is my <?php echo numeral(total_articles()); ?> oldest. It is <?php echo count_words(article_markdown()); ?> words long<?php if(comments_open()): ?>, and it’s got <?php echo total_comments() . pluralise(total_comments(), ' comment'); ?> for now.<?php endif; ?> <?php echo article_custom_field('attribution'); ?></p>
