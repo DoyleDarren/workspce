@@ -6,6 +6,10 @@ header{
 	overflow: hidden;
 }
 
+.row{
+	background: #f3f5f8;
+}
+
 .imgspace img{
 	padding-top: 0px;
 }

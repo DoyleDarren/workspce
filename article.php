@@ -97,8 +97,8 @@
 					<?php echo comment_form_button(); ?>
 				</p>
 			</form>
-
 		</section>
+		
 		<?php endif; ?>
 
 		<?php theme_include('footer'); ?>
