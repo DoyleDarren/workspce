@@ -12,7 +12,7 @@
 [X]Social links - twitter, facebook, email
 []Signup for a newsletter?
 [ ]add archive page, search functionaity
-[ ]Make background buttons more transparent
+[X]Make background buttons more transparent
 [ ]add About page
 [ ]add projects page - to display my work (eg anchor docs)
 [ ]add newsletter
