@@ -28,11 +28,10 @@
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
 		<section class="content wrap" id="article-<?php echo article_id(); ?>">
-			<h1 class="title"><?php echo article_title(); ?></h1>
-
-			<article class="content">
-				<?php echo article_markdown(); ?>
-			</article>
+			<h1 class="title"><?php echo article_title(); ?></h1> 
+					<article class="content"
+						<?php echo article_markdown(); ?>
+					</article>	
 			<div class="share">
 			   <ul>
 			      <li>
