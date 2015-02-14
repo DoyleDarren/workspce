@@ -15,6 +15,5 @@
 [X]Make background buttons more transparent
 [ ]add About page
 [ ]add projects page - to display my work (eg anchor docs)
-[ ]add newsletter
 [ ]add pictures in article (not header image) 
 
