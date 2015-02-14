@@ -40,7 +40,6 @@
 			            onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
 			        </a>
 			      </li>
-
 			    <li>
 			        <a class="icon-facebook-2" href="https://www.facebook.com/sharer/sharer.php?u=<?php echo (full_url() . substr( article_url(), 1)); ?>?>"
 			            onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
