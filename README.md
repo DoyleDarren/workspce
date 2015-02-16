@@ -9,11 +9,10 @@
 [X]Fix links - green/underline  
 []Add favicon  
 []Add grey background  
-[X]Social links - twitter, facebook, email
-[]Signup for a newsletter?
-[ ]add archive page, search functionaity
-[X]Make background buttons more transparent
-[ ]add About page
-[ ]add projects page - to display my work (eg anchor docs)
-[ ]add pictures in article (not header image) 
-
+[X]Social links - twitter, facebook, email  
+[]Signup for a newsletter?  
+[ ]add archive page, search functionaity  
+[X]Make background buttons more transparent  
+[ ]add About page  
+[ ]add projects page - to display my work (eg anchor docs)  
+[ ]add pictures in article (not header image)  
