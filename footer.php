@@ -4,11 +4,5 @@
 	            </footer>
 		    </div>
         </div>
-
-		<script>
-			$('.cross').click(function(){
-				if($(this).hasClass('transform')) $(this).removeClass('transform'); else $(this).addClass('transform');
-			});
-		</script>
     </body>
 </html>
