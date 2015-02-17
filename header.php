@@ -8,6 +8,8 @@
 
 		<meta name="viewport" content="width=device-width">
 	    <meta name="generator" content="Anchor CMS">
+	    <meta name="keywords" content="">
+		<meta name="author" content="">
 
 	    <meta property="og:title" content="<?php echo site_name(); ?>">
 	    <meta property="og:type" content="website">
