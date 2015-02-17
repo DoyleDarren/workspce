@@ -1,7 +1,7 @@
 <?php theme_include('header'); ?>
 
-	<div class="row">
-	  	<div class="col-md-6 col-md-offset-3">
+	<div class="container">
+	  	<div class="col-md-8 col-md-offset-2">
 	  		<section class="content">
 				<?php if(has_posts()): ?>
 				    <?php while(posts()): ?>
