@@ -117,5 +117,3 @@
 				<h1 class="page-title"><?php echo site_name(); ?></h1>		
 			<?php endif; ?>
 		</header>
-
-			
