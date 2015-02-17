@@ -114,6 +114,8 @@
 					</li>
 				</ul>	
 			</nav>
-				<h1 class="page-title"><?php echo site_name(); ?></h1>		
+			<div class="container page-title">
+				<h1><?php echo site_name(); ?></h1>
+			</div>
 			<?php endif; ?>
 		</header>
