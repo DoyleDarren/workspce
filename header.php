@@ -8,11 +8,9 @@
 		
 		<link rel="stylesheet" href="<?php echo theme_url('/css/style.css'); ?>">
 		<link rel="stylesheet" href="<?php echo theme_url('/css/fontello.css'); ?>">
+		
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-		<!-- Optional theme -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
-
 		
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="<?php echo rss_url(); ?>">
 		<link rel="shortcut icon" href="<?php echo theme_url('img/favicon-16x16.png'); ?>">
