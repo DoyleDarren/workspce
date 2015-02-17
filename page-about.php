@@ -6,13 +6,12 @@
 
 		<meta name="description" content="<?php echo site_description(); ?>">
 		
-		<link rel="stylesheet" href="<?php echo theme_url('/css/style.css'); ?>">
 		<link rel="stylesheet" href="<?php echo theme_url('/css/fontello.css'); ?>">
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 		<!-- Optional theme -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
-
+		<link rel="stylesheet" href="<?php echo theme_url('/css/about.css'); ?>">
 		
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="<?php echo rss_url(); ?>">
 		<link rel="shortcut icon" href="<?php echo theme_url('img/favicon-16x16.png'); ?>">
@@ -70,6 +69,7 @@
 		  ga('send', 'pageview');
 		</script>
 	</head>
+	
 	<body class="<?php echo body_class(); ?>">
 		<div class="main-wrap">
 			<div class="slidey" id="tray">
@@ -81,30 +81,49 @@
 					</div>
 				</div>
 			</div>
-		</div>	
-		<header>
-			<?php if(has_menu_items()): ?>
-			<nav>
-				<ul class="a">
-					<?php while(menu_items()): ?>
-						<li <?php echo (menu_active() ? 'class="active"' : 'class="tray"'); ?>>
-							<a href="<?php echo menu_url(); ?>" title="<?php echo menu_title(); ?>">
-								<?php echo menu_name(); ?>
-							</a>
+			<header>
+				<?php if(has_menu_items()): ?>
+				<nav>
+					<ul class="a">
+						<?php while(menu_items()): ?>
+							<li <?php echo (menu_active() ? 'class="active"' : 'class="tray"'); ?>>
+								<a href="<?php echo menu_url(); ?>" title="<?php echo menu_title(); ?>">
+									<?php echo menu_name(); ?>
+								</a>
+							</li>
+						<?php endwhile; ?>
+					</ul>
+
+					<ul class="b">
+						<li>
+							<!-- <a href="#tray" class="linky"><img src="<?php echo theme_url('img/categories.png'); ?>" alt="Categories" title="Search my posts"></a> -->
+							<a title="Search my posts"class="absolute cross"><div></div></a>
 						</li>
-					<?php endwhile; ?>
-				</ul>
+					</ul>	
+				</nav>		
+				<?php endif; ?>
+			</header>
+			<div class="about">			
+				<section>
+					
+				</section>
+			</div>	
+			<div class="portfolio">
+				<section>
+					
+				</section>
+			</div>
+			<div class="wrap">
+	            <footer id="bottom">
+	                <small>&copy; <?php echo date('Y'); ?> <?php echo site_name(); ?>. All rights reserved.</small>
+	            </footer>
+		    </div>
+        </div>
 
-				<ul class="b">
-					<li>
-						<!-- <a href="#tray" class="linky"><img src="<?php echo theme_url('img/categories.png'); ?>" alt="Categories" title="Search my posts"></a> -->
-						<a title="Search my posts"class="absolute cross"><div></div></a>
-					</li>
-				</ul>	
-			</nav>
-				<h1 class="page-title"><?php echo site_name(); ?></h1>		
-			<?php endif; ?>
-		</header>
-	</body>	
-
-			
+		<script>
+			$('.cross').click(function(){
+				if($(this).hasClass('transform')) $(this).removeClass('transform'); else $(this).addClass('transform');
+			});
+		</script>
+    </body>
+</html>
