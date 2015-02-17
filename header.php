@@ -19,7 +19,14 @@
 	    <meta property="og:description" content="<?php echo site_description(); ?>">
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="<?php echo theme_url('img/ms-icon-144x144.png'); ?>">
+		<meta name="theme-color" content="#ffffff">
+
+
 		<link rel="stylesheet" href="<?php echo theme_url('/css/style.css'); ?>">
+		
+		<!-- Include fontello icon font -->
 		<link rel="stylesheet" href="<?php echo theme_url('/css/fontello.css'); ?>">
 
 		<!-- Latest compiled and minified CSS -->
@@ -42,9 +49,6 @@
 		<link rel="icon" type="image/png" sizes="96x96" href="<?php echo theme_url('img/favicon-96x96.png'); ?>">
 		<link rel="icon" type="image/png" sizes="16x16" href="<?php echo theme_url('img/favicon-16x16.png'); ?>">
 		<link rel="manifest" href="/manifest.json">
-		<meta name="msapplication-TileColor" content="#ffffff">
-		<meta name="msapplication-TileImage" content="<?php echo theme_url('img/ms-icon-144x144.png'); ?>">
-		<meta name="theme-color" content="#ffffff">
 
 		<!--[if lt IE 9]>
 			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -62,7 +66,7 @@
     		<script><?php echo article_js(); ?></script>
 		<?php endif; ?>
 
-		
+		<!-- Google Analytics -->
 		<script>
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -72,10 +76,12 @@
 			ga('create', 'UA-58716001-1', 'auto');
 			ga('send', 'pageview');
 		</script>
+		<!-- End Google Analytics -->
 
 	</head>
 
 	<body class="<?php echo body_class(); ?>">
+		
 		<div class="main-wrap">
 			<div class="slidey" id="tray">
 				<div class="wrap">
@@ -87,6 +93,7 @@
 				</div>
 			</div>
 		</div>	
+
 		<header>
 			<?php if(has_menu_items()): ?>
 			<nav>
@@ -110,6 +117,7 @@
 				<h1 class="page-title"><?php echo site_name(); ?></h1>		
 			<?php endif; ?>
 		</header>
+		
 	</body>	
 
 			
