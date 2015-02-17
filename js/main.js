@@ -27,7 +27,12 @@ var Anchor = {
 				return Anchor.toggleSlidey.call(Anchor.cross);
 			}
 		});
+
+		$('.cross').click(function(){
+			if($(this).hasClass('transform')) $(this).removeClass('transform'); else $(this).addClass('transform');
+		});
 	},
+
 
 	keyup: function(event) {
 		Anchor.keys[event.keyCode] = false;
