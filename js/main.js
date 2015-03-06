@@ -31,6 +31,19 @@ var Anchor = {
 		$('.cross').click(function(){
 			if($(this).hasClass('transform')) $(this).removeClass('transform'); else $(this).addClass('transform');
 		});
+
+		$('a[href^="#"]').on('click',function (e) {
+            e.preventDefault();
+
+            var target = this.hash,
+            $target = $(target);
+
+            $('body').stop().animate({
+                'scrollTop': $target.offset().top
+            }, 1000, 'swing', function () {
+                window.location.hash = target;
+            });
+        });
 	},
 
 

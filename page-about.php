@@ -72,7 +72,7 @@
 	
 	<body class="<?php echo body_class(); ?>">
 		<div class="main-wrap">
-			<div class="slidey" id="tray">
+			<div class="slidey" id="tray" style="margin-top: -153px;">
 				<div class="wrap">
 					<div class="col-md-12">
 						<form id="search" action="<?php echo search_url(); ?>" method="post">
@@ -103,14 +103,16 @@
 				</nav>		
 				<?php endif; ?>
 			</header>
-			<div class="about">			
-				<section>
-					
+			<div class="container-full-screen about">			
+				<section id="about">
+					 <a class="scroll-toggle about" href="#about"></a>
+					 <a class="scroll-toggle portfolio" href="#portfolio"></a>
 				</section>
 			</div>	
-			<div class="portfolio">
-				<section>
-					
+			<div class="container-full-screen portfolio">
+				<section id="portfolio">
+					 <a class="scroll-toggle about" href="#about"></a>
+					 <a class="scroll-toggle portfolio" href="#portfolio"></a>
 				</section>
 			</div>
 			<div class="wrap">
@@ -119,11 +121,6 @@
 	            </footer>
 		    </div>
         </div>
-
-		<script>
-			$('.cross').click(function(){
-				if($(this).hasClass('transform')) $(this).removeClass('transform'); else $(this).addClass('transform');
-			});
-		</script>
+        <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
     </body>
 </html>

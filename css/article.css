@@ -12,6 +12,9 @@ header{
 
 .imgspace img{
 	padding-top: 0px;
+	height: 500px;
+	width: 100%;
+	overflow: hidden;
 }
 
 img.img-float-left{

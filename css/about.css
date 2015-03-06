@@ -1,14 +1,16 @@
 @import url(http://fonts.googleapis.com/css?family=Domine:400,700);
 
 
-
+/*body, html{
+	width: 100%;
+	height: 100%;
+}*/
 /* The slide-down panel at the very top of the page. Like literally. It's above the page, hidden. */
 .slidey {
 	overflow: hidden;
-	padding: 30px 0;
-
 	background: #f3f5f8;
 	border-bottom: 1px solid #e5e8ed;
+	height: 153px;
 }
 	.js-enabled .slidey {
 		-webkit-transition: margin-top .2s;
@@ -29,6 +31,7 @@
 	}
 		.slidey form input {
 			padding: 10px;
+			margin: 30px 0;
 			width: 100%;
 		}
 	.slidey li {
@@ -53,23 +56,46 @@ header{
 	z-index:1;
 }
 
-div.about{
+.container-full-screen{
 	height: 100%;
 	width: 100%;
 	position: absolute;
-	background-color: red;
-	padding: 0;
-	margin: 0;
+	overflow: hidden;
 }
 
-div.portfolio{
-	height: 100%;
-	width: 100%;
+.portfolio{
 	background-color: blue;
-	position: absolute;
 	top:100%;
 }
+.about{
+	background-color: red;
+}
 
+/*buttons to toggle page scroll*/
+a.scroll-toggle{
+	background: white;
+	height: 9px;
+	width: 16px;
+	position: absolute;
+	left:2%;
+	display: block;
+}
+
+a.about{
+	top: 48%;
+	/*background-color: #d81717;	*/
+}
+
+a.portfolio{
+	top:52%;
+	/*background-color: #1111c4;*/
+}
+
+a.scroll-toggle:hover {
+	height: 12px;
+	width: 17px;
+
+}
 
 ul.a, ul.b{
 	list-style-type: none;
@@ -235,7 +261,6 @@ footer{
 	list-style: none;
 	padding: 10px 0px 30px;
 }
-
 
 ul.items {
 	padding-left: 0px;
