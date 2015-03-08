@@ -1,7 +1,7 @@
 <?php theme_include('header'); ?>
 
 <div class="container">
-  <div class="col-md-6 col-md-offset-3">
+  <div class="col-md-8 col-md-offset-2">
 	<h1 class="wrap">You searched for &ldquo;<?php echo search_term(); ?>&rdquo;.</h1>
 
 	<?php if(has_search_results()): ?>
