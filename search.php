@@ -29,7 +29,6 @@
 	<?php else: ?>
 		<p class="wrap">Unfortunately, there's no results for &ldquo;<?php echo search_term(); ?>&rdquo;. Did you spell everything correctly?</p>
 	<?php endif; ?>
-
-	<?php theme_include('footer'); ?>
 	</div>
-</div>		
+</div>	
+<?php theme_include('footer'); ?>	
