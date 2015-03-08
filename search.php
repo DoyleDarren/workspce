@@ -1,6 +1,6 @@
 <?php theme_include('header'); ?>
 
-<div class="row">
+<div class="container">
   <div class="col-md-6 col-md-offset-3">
 	<h1 class="wrap">You searched for &ldquo;<?php echo search_term(); ?>&rdquo;.</h1>
 
