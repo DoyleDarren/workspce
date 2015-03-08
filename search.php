@@ -6,12 +6,12 @@
 		<?php if(has_search_results()): ?>
 			<?php $i = 0; while(search_results()): $i++; ?>
 				<div class="col-md-4">
-					<?php if(article_custom_field('image','')!=""): ?>
-					<a href="<?php echo article_url(); ?>"><img src="<?php echo article_custom_field('image', ''); ?>"/></a>
-					<?php endif; ?>
-					<h2><a href="<?php echo article_url(); ?>" title="<?php echo article_title(); ?>"><?php echo article_title(); ?></a></h2>
-					<a href="<?php echo article_url(); ?>"><?php echo article_description(); ?></a>
-					<p>Posted <time datetime="<?php echo date(DATE_W3C, article_time()); ?>"><?php echo relative_time(article_time()); ?></time> by <?php echo article_author('real_name'); ?>.</p>
+					<a href="<?php echo article_url(); ?>" title="<?php echo article_title(); ?>" class="search-block">
+						<div class="image" style="background-image: url('');"></div>
+						<div class="title">
+							<h4><?php echo article_title(); ?></h4>
+						</div>
+					</a>
 				</div>
 			<?php endwhile; ?>
 			<?php if(has_pagination()): ?>
@@ -26,4 +26,4 @@
 			<p class="wrap">Unfortunately, there's no results for &ldquo;<?php echo search_term(); ?>&rdquo;. Did you spell everything correctly?</p>
 		<?php endif; ?>
 	</div>	
-<?php theme_include('footer'); ?>	
+<?php theme_include('footer'); ?>
