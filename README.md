@@ -15,4 +15,5 @@
 [X]Make background buttons more transparent  
 [ ]add About page & add projects page - to display my work (eg anchor docs)  
 [X]add pictures in article (not header image)  
-**[]Center page title**
+**[]Center page title**  
+[ ]Add new 404 page  
