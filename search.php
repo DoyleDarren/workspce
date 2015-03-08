@@ -15,12 +15,14 @@
 				</div>
 			<?php endwhile; ?>
 			<?php if(has_pagination()): ?>
-			<nav class="pagination">
-				<div class="wrap">
-					<?php echo search_prev(); ?>
-					<?php echo search_next(); ?>
+				<div class="col-md-4">
+					<nav class="pagination">
+						<div class="wrap">
+							<?php echo search_prev(); ?>
+							<?php echo search_next(); ?>
+						</div>
+					</nav>
 				</div>
-			</nav>
 			<?php endif; ?>
 		<?php else: ?>
 			<p class="wrap">Unfortunately, there's no results for &ldquo;<?php echo search_term(); ?>&rdquo;. Did you spell everything correctly?</p>
