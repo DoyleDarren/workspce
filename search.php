@@ -7,7 +7,7 @@
 			<?php $i = 0; while(search_results()): $i++; ?>
 				<div class="col-md-4">
 					<a href="<?php echo article_url(); ?>" title="<?php echo article_title(); ?>" class="search-block">
-						<div class="image" style="background-image: url('');"></div>
+						<div class="image" style="background-image: url('<?php echo article_custom_field('image', ''); ?>');"></div>
 						<div class="title">
 							<h4><?php echo article_title(); ?></h4>
 						</div>
